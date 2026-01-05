@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Getränke-Tracker — 03.01</title>
+<link href="./styles.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="topbar">
+<nav aria-label="Wochen-Navigation" class="week-nav">
+<a aria-label="Vorherige Woche" class="nav-arrow" href="./2025-12-06.html" rel="prev" title="Vorherige Woche">‹</a>
+<h1 class="week-date">03.01</h1>
+<span aria-disabled="true" class="nav-arrow disabled">›</span>
+</nav>
+<section aria-label="Wochen-Infos" class="info-grid">
+<article class="info-card status">
+<div aria-hidden="true" class="icon">
+<svg fill="none" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 8v4l3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+<div class="info-text">
+<strong>Status</strong>
+<p>Wird jeweils samstags aktualisiert.</p>
+</div>
+</article>
+<article class="info-card reminder">
+<div aria-hidden="true" class="icon">
+<svg fill="none" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 7h18s-3 0-3-7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M13.73 21a2 2 0 0 1-3.46 0" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="info-text">
+<strong>Reminder</strong>
+<p>Bitte zahlen, bevor die Errinerungsgebühr anfällt.</p>
+</div>
+</article>
+<article class="info-card abos">
+<div aria-hidden="true" class="icon">
+<svg fill="none" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 12V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M4 12h16l-1 9H5l-1-9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="info-text">
+<strong>Abos</strong>
+<p>Plus/Pro Abos werden derzeit nicht unterstützt.</p>
+</div>
+</article>
+<article class="info-card news">
+<div aria-hidden="true" class="icon">
+<svg fill="none" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 19.5V4a2 2 0 0 1 2-2h11l3 3v14.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z" stroke="currentColor" stroke-width="2"></path>
+<path d="M7 8h10" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<path d="M7 12h10" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<path d="M7 16h8" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="info-text">
+<strong>News</strong>
+<p>Die Beta-Testphase ist gestartet! Bitte meldet Bugs oder Verbesserungsvorschläge an den Vorstand.</p>
+</div>
+</article>
+</section>
+<section aria-label="Wochen-Statistiken" class="stats">
+<div class="stat-row eur" id="stat-total">
+<span class="label">Gesamtschuld:</span>
+<strong class="mono amount" style="color:var(--r)"><span class="num">-1338,74</span><span class="cur">€</span></strong>
+</div>
+<div class="stat-row eur" id="stat-schwund">
+<span class="label">Schwund:</span>
+<strong class="mono amount" style="color:var(--r)"><span class="num">-24,2</span><span class="cur">€</span></strong>
+</div>
+<div class="stat-row eur" id="stat-coleur">
+<span class="label">Coleur:</span>
+<strong class="mono amount" style="color:var(--r)"><span class="num">-24</span><span class="cur">€</span></strong>
+</div>
+<div class="stat-row" id="stat-inventar">
+<span class="label">Inventarisierung:</span>
+<div aria-label="Inventar" class="inv-pills mono">
+<span class="pill pill-r">77R</span>
+<span class="pill pill-g">78G</span>
+<span class="pill pill-b">15B</span>
+<span class="pill pill-w">6W</span>
+<span class="pill pill-s">3S</span>
+</div>
+</div>
+</section>
+<section aria-label="Pflichtzahler" class="info-grid">
+<article class="info-card mustpay">
+<div aria-hidden="true" class="icon">
+<svg fill="none" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2 2 7l10 5 10-5-10-5Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M2 17l10 5 10-5" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M2 12l10 5 10-5" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="info-text">
+<strong>Pflichtzahler bis AC/BC</strong>
+<p class="mono">David L, Friedrich, Jörn, Justus, Lennart, Nicola, Paul, Petar, Philipp, Vinzenz F</p>
+</div>
+</article>
+</section>
+</header>
+<main aria-label="Personen" class="cards">
+<article class="card"><header class="card-head"><h2 class="name">Andreas</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-42,7 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Anelka</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-r">5R</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">6,00 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-31,00 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Basti</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-r">7R</span><span class="pill pill-g">1G</span><span class="pill pill-b">1B</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">10,20 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--g)">+6,8 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Bauch</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-r">2R</span><span class="pill pill-b">1B</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">3,40 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-7,00 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">—</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Clemens F</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-21,9 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Daniel B</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-21,2 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Daniel W</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-8,4 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">David K</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--g)">+23,6 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">David L</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-117,10 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">10 €</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">David S</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-35,6 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Dmitri</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-8,6 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Dominik</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-r">8R</span><span class="pill pill-g">2G</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">11,20 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-24,00 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Emil</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-r">2R</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">2,40 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--g)">+31,8 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">—</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Felix</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">0,00 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">-</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Finch</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-r">5R</span><span class="pill pill-g">4G</span><span class="pill pill-b">1B</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">10,20 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-12,2 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Florian</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--g)">+10 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Friedrich</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-r">28R</span><span class="pill pill-g">2G</span><span class="pill pill-b">3B</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">38,20 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-222,00 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">20,00 €</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Greggor N</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--g)">+1,4 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Jakob L</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-r">2R</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">2,40 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--g)">+22,8 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Jan</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-r">4R</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">4,80 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-18,38 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Johannes H</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--g)">+35,36 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Johannes S</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-16 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Jonas</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-0,87 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Jörn</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-69,8 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">5 €</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Julian</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-7 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Justus</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-r">4R</span><span class="pill pill-g">3G</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">7,20 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-102,27 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">10 €</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Kilian E</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-g">4G</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">3,20 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-8,00 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Krisha</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--g)">+36,6 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Lennart</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-86,14 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">5 €</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Lorenz</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--g)">+98,68 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Max</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--g)">+18,6 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Michael</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--g)">+1,67 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Micael R</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-20,2 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Nicola</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-b">9B</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">9,00 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-135,20 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">10 €</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Paul</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-r">10R</span><span class="pill pill-g">17G</span><span class="pill pill-b">5B</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">30,60 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-300,42 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">30,00 €</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Petar</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-65,58 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">5 €</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Philipp</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-53,20 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">5,00 €</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Schmitti</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-r">12R</span><span class="pill pill-b">3B</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">17,40 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-23,40 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Sebastian</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-2,7 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Simon</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-4,2 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Stefan B</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-42 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Stefan H</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-8,2 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Stimmel</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--g)">+20 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Sven</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-5,24 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Vinzenz F</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-r">19R</span><span class="pill pill-g">1G</span><span class="pill pill-b">3B</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">26,60 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-95,90 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">5,00 €</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Vinzenz R</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono">–</dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">– €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-15,8 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+<article class="card"><header class="card-head"><h2 class="name">Wüllner</h2><span class="badge">Abo: none</span></header><dl class="kv">
+<div><dt>Diese Woche</dt><dd class="mono"><span class="pill pill-r">6R</span><span class="pill pill-g">1G</span><span class="pill pill-b">1B</span></dd></div>
+<div><dt>Diese Woche fällig</dt><dd class="mono">9,00 €</dd></div>
+<div><dt>Gesamt fällig</dt><dd class="mono"><span style="color:var(--r)">-9,00 €</span></dd></div>
+<div><dt>Errinerungsgebühr</dt><dd class="mono">–</dd></div>
+</dl></article>
+</main>
+<footer class="legend">Preise: R = 1,20 €, G = 0,80 €, B = 1,00 €, W = 10,00 €, S = 15,00 €</footer>
+<footer class="bottom-info">
+<div class="pay">
+<strong>Bezahlung:</strong>
+<span class="mono">Getränke-AG (IBAN: DE00 0000 0000 0000 0000 00)</span>
+</div>
+<div class="pay">
+<strong>PayPal:</strong>
+<a href="https://paypal.me/example" rel="noopener noreferrer" target="_blank">paypal.me/example</a>
+</div>
+</footer>
+</body>
+</html>
